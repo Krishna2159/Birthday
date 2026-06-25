@@ -8,11 +8,24 @@ document.getElementById("envelope-screen");
 const mainContent =
 document.getElementById("main-content");
 
+const music =
+document.getElementById("bgMusic");
+
 envelopeScreen.addEventListener("click", () => {
 
     envelopeScreen.style.display = "none";
 
     mainContent.classList.remove("hidden");
+
+    music.volume = 0.3;
+
+    music.play().catch(() => {
+
+        console.log(
+            "Music autoplay blocked"
+        );
+
+    });
 
 });
 
@@ -133,13 +146,16 @@ setInterval(() => {
 
             letterUnlocked = true;
 
+            music.pause();
+            music.currentTime = 0;
+
             document
             .getElementById("videoBtn")
             .classList.remove("hidden");
 
             fireworks();
 
-            alert("🎥 Special Video Unlocked!");
+            alert(" One More Surprise For You ❤️");
         }
 
     }
