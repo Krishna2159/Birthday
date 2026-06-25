@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiest Birthday Meri Kiara ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<!-- Envelope Screen -->
+
+<div id="envelope-screen">
+
+    <div class="envelope-container">
+
+        <div class="envelope-card">
+
+            <h2>💌</h2>
+
+            <h3>Tap To Open</h3>
+
+            <p>
+                A little birthday surprise for Kiara ✨
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div id="main-content" class="hidden">
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>
+            🎂 Happiest Birthday Meri Kiara
+        </h1>
+
+        <p class="birthday-date">
+            26 June 2026 ✨
+        </p>
+
+        <h2 id="typing-text"></h2>
+
+    </section>
+
+
+    <!-- Photo Counter -->
+
+    <div id="photo-counter">
+
+        📸 1 / 14
+
+    </div>
+
+
+    <!-- Slideshow -->
+
+    <section class="slideshow-section">
+
+        <div class="photo-frame">
+
+            <img
+                id="slide"
+                src="photo1.jpg"
+                alt="Kiara">
+
+        </div>
+
+    </section>
+
+
+    <!-- Photo Caption -->
+
+    <div id="photo-caption">
+
+        Meri model ❤️‍🔥
+
+    </div>
+
+<!-- Special Video -->
+
+<section
+    id="videoSection"
+    class="video-section hidden">
+
+    <h2>
+        🎥 A Special Moment
+    </h2>
+
+    <video
+        id="kiaraVideo"
+        controls
+        playsinline>
+
+        <source
+            src="video.mp4"
+            type="video/mp4">
+
+    </video>
+
+</section>
+
+
+<section class="button-section">
+
+    <button
+        id="videoBtn"
+        class="letter-btn hidden"
+        onclick="showVideo()">
+
+        🎥 Watch Your Special Birthday Moment
+
+    </button>
+
+</section>
+
+
+    <!-- Letter Unlock -->
+
+    <section class="button-section">
+
+        <button
+            id="letterBtn"
+            class="letter-btn hidden"
+            onclick="showLetter()">
+
+            💌 Open Letter
+
+        </button>
+
+    </section>
+
+
+    <!-- Letter -->
+
+    <div id="letter" class="letter-box hidden">
+
+        <h2>
+            💌 For Kiara ❤️
+        </h2>
+
+        <p>
+
+            Happy 21st Birthday Kiara ❤️
+
+            <br><br>
+
+            Aaj ka din sirf tumhare liye hai.
+
+            <br><br>
+
+            21 saal pehle duniya ko ek bahut hi pyari,
+            calm, samajhdar aur special ladki mili thi.
+
+            <br><br>
+
+            Tum super calm ho.
+            <br>
+            Tum natural ho.
+            <br>
+            Sundariii ho.
+            <br>
+            Bacchi si ho.
+            <br>
+            Bahut cutu ho.
+            <br>
+            Tumhara shant behaviour mujhe pasand hai.
+            <br>
+            Tum bahut samajhdar ho.
+            <br>
+            Bahut pyari ho.
+            <br>
+            Hamesha care karti ho.
+            <br>
+            Introvert ho — aur wahi meri favourite baat hai.
+            <br>
+            Non-veg bahut tasty banati ho.
+            <br>
+            Gussa bhi poore haqq se karti ho.
+            <br>
+            Toxic nahi ho.
+            <br>
+            Kafi simple ladki ho.
+            <br>
+            Thodi si pagal bhi ho.
+            <br>
+            Kabhi kabhi ullu bhi ho.
+            <br>
+            Kabhi kabhi gadhi bhi ho.
+            <br>
+            Kabhi kabhi suar bhi ho.
+            <br>
+            Thodi si bandrii ho.
+            <br>
+            Lekin meri kuchupucchu ho.
+            <br>
+            Aur sabse important —
+            jaisi bhi ho, meri Kiara ho ❤️
+
+            <br><br>
+
+            Aur tum hamesha khush raho,
+            baaki takleefo se door raho,
+            aur kuch bhi ho toh hamko bataya karo.
+
+            <br><br>
+
+            Main hamesha tumhare saath hoon.
+
+            <br><br>
+
+            🎂✨❤️
+
+        </p>
+
+    </div>
+
+    <!-- Cake Section -->
+
+    <section class="button-section">
+
+        <button
+            class="celebrate-btn"
+            onclick="cutCake()">
+
+            🎂 Cut Birthday Cake
+
+        </button>
+
+    </section>
+
+
+    <div
+        id="cakeSection"
+        class="hidden">
+
+        <img
+            src="photo15.jpeg"
+            id="cakePhoto"
+            alt="Birthday Cake">
+
+        <h2 class="cake-text">
+
+            🎉 Happiest 21st Birthday Kiara 🎉
+
+        </h2>
+
+        <p class="cake-subtext">
+
+            Tum hamesha itni hi khush rehna ❤️❤️
+
+        </p>
+
+    </div>
+
+
+    <!-- Memory Challenge -->
+
+    <section class="memory-section">
+
+        <h2>
+            🫙 Memory Jar
+        </h2>
+
+        <div id="memoryChallenge">
+
+            <p>
+
+                💭 Do you remember the first time we talked?
+
+                <br><br>
+
+                Guess the date and month
+
+            </p>
+
+            <input
+                type="text"
+                id="memoryAnswer"
+                placeholder="Date & Month guess kro pgluuu">
+
+            <br><br>
+
+            <button
+                class="letter-btn"
+                onclick="checkMemoryAnswer()">
+
+                Submit
+
+            </button>
+
+            <p id="memoryResult"></p>
+
+        </div>
+
+
+        <div
+            id="memoryTimeline"
+            class="hidden">
+
+            <div class="memory-box">
+
+                ❤️ 18 Nov 2021 -
+                first time jab hamne baat ki thi.
+
+            </div>
+
+            <div class="memory-box">
+
+                🤝 26 May 2022 -
+                jab hamne ek dusre ka haath pakda tha.
+
+            </div>
+
+            <div class="memory-box">
+
+                🥰 05 Mar 2023 -
+                first cheek kiss.
+
+            </div>
+
+            <div class="memory-box">
+
+                😝 4 saal 4 mahine 9 din hogye
+                hame ek dusre ko jhele hue.
+
+            </div>
+
+            <div class="memory-box">
+
+                🫂🤗🤗 Aur hamlog aaise hi
+                aage saath rhenge... ❤️
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Final Message -->
+
+    <div class="final-message">
+
+        ❤️ Thank You For Being You ❤️
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ for Kiara
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
