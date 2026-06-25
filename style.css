@@ -135,7 +135,7 @@ body{
     width:350px;
     max-width:85vw;
     border-radius:20px;
-    transition:1.5s;
+    transition: opacity 1s ease;
 }
 
 
@@ -150,7 +150,7 @@ body{
     font-weight:700;
     margin-top:15px;
     margin-bottom:25px;
-    animation:captionPop .5s ease;
+    transition: opacity 1s ease;
 }
 
 
