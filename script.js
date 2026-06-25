@@ -145,6 +145,7 @@ setInterval(() => {
     }
 
     slide.style.opacity = "0";
+    caption.style.opacity = "0";
 
     setTimeout(() => {
 
@@ -157,7 +158,8 @@ setInterval(() => {
         `📸 ${currentPhoto + 1} / 14`;
 
         slide.style.opacity = "1";
-
+        caption.style.opacity = "1";
+        
     }, 1000);
 
     photoCounter++;
